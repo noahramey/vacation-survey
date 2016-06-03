@@ -41,8 +41,6 @@ $(document).ready(function() {
       $(".name").text(name);
     }
 
-    alert("hi")
-
     event.preventDefault();
   });
 });

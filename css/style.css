@@ -37,12 +37,20 @@ body {
   display: none;
 }
 
+h2 {
+  font-size: 25px;
+}
+
 img {
   width: 75%;
 }
 
 .btn-warning {
   background: #FC8710;
+}
+
+label {
+  color: #FC8710;
 }
 /*FORM AND RESULTS*/
 
