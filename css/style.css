@@ -11,3 +11,11 @@ body {
   height: auto;
   text-align: center;
 }
+
+img {
+  width: 75%;
+}
+
+#stregis, #altapura, #lake-tahoe, #himalayas, #maui, #gracebay {
+  display: none;
+}
