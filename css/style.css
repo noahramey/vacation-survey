@@ -1,3 +1,21 @@
+
+/*NAVBAR*/
+.navbar-default .navbar-brand {
+  color: #gray;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #FC8710;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #FC8710;
+}
+.navbar-fixed-top {
+  border: none;
+}
+/*NAVBAR*/
+
 body {
   padding-top: 60px;
 }
@@ -18,4 +36,21 @@ img {
 
 #stregis, #altapura, #lake-tahoe, #himalayas, #maui, #gracebay {
   display: none;
+}
+
+h3 {
+  font-size: 20px;
+  color: #FC8710;
+}
+
+.btn-warning {
+  background: #FC8710;
+}
+
+a {
+  color: #FC8710;
+}
+
+.my-info {
+  text-align: center;
 }
