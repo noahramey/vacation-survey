@@ -1,3 +1,6 @@
+body {
+  padding-top: 60px;
+}
 
 /*NAVBAR*/
 .navbar-default .navbar-brand {
@@ -16,37 +19,34 @@
 }
 /*NAVBAR*/
 
-body {
-  padding-top: 60px;
-}
-
+/*JUMBOTRON*/
 .jumbotron {
-  background-image: url(../img/header-background.jpg);
-  background-position: 0% 25%;
+  background-image: url(../img/header-background2.jpg);
+  /*background-image: url(../img/header-background.jpg);*/
+  background-position: 0% 33%;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
   height: auto;
   text-align: center;
 }
+/*JUMBOTRON*/
+
+/*FORM AND RESULTS*/
+#stregis, #altapura, #lake-tahoe, #himalayas, #maui, #gracebay, #snowybeach {
+  display: none;
+}
 
 img {
   width: 75%;
 }
 
-#stregis, #altapura, #lake-tahoe, #himalayas, #maui, #gracebay {
-  display: none;
-}
-
-h3 {
-  font-size: 20px;
-  color: #FC8710;
-}
-
 .btn-warning {
   background: #FC8710;
 }
+/*FORM AND RESULTS*/
 
+/*CONTACT PAGE*/
 a {
   color: #FC8710;
 }
@@ -54,3 +54,4 @@ a {
 .my-info {
   text-align: center;
 }
+/*CONTACT PAGE*/

@@ -8,30 +8,35 @@ $(document).ready(function() {
     var siteseeingActivities = parseInt($("#siteseeing-activities").val());
     var name = $("#name").val();
 
-    $("#stregis, #altapura, #lake-tahoe, #himalayas, #maui, #gracebay").hide();
+    $("#stregis, #altapura, #lake-tahoe, #himalayas, #maui, #gracebay, #snowybeach").hide();
 
     if (mountainsBeach === 1 && snowSun === 1 && insideOutside === 1) {
-      $("#stregis").show();
+      $("#survey").fadeOut();
+      $("#stregis").fadeIn();
       $(".name").text(name);
-    }
-
-    if (mountainsBeach === 1 && snowSun === 1 && insideOutside === 2) {
-      $("#altapura").show();
+    } else if (mountainsBeach === 1 && snowSun ===1 && insideOutside === 2) {
+      $("#survey").fadeOut();
+      $("#altapura").fadeIn();
       $(".name").text(name);
-    }
-
-    if (mountainsBeach === 1 && snowSun === 2 && insideOutside === 1) {
-      $("#lake-tahoe").show();
+    } else if (mountainsBeach === 1 && snowSun === 2 && insideOutside === 1) {
+      $("#survey").fadeOut();
+      $("#lake-tahoe").fadeIn();
       $(".name").text(name);
-    }
-
-    if (mountainsBeach === 1 && snowSun === 2 && insideOutside === 2) {
-      $("#himalayas").show();
+    } else if (mountainsBeach === 1 && snowSun === 2 && insideOutside === 2) {
+      $("#survey").fadeOut();
+      $("#himalayas").fadeIn();
       $(".name").text(name);
-    }
-
-    if (mountainsBeach === 2 && snowSun === 2 && insideOutside === 1) {
-      $("#maui").show();
+    } else if (mountainsBeach === 2 && snowSun === 2 && insideOutside === 1) {
+      $("#survey").fadeOut();
+      $("#maui").fadeIn();
+      $(".name").text(name);
+    } else if (mountainsBeach === 2 && snowSun === 2 && insideOutside === 2) {
+      $("#survey").fadeOut();
+      $("#gracebay").fadeIn();
+      (".name").text(name);
+    } else {
+      $("#survey").fadeOut();
+      $("#snowybeach").fadeIn();
       $(".name").text(name);
     }
 
