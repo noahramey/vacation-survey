@@ -1,0 +1,13 @@
+body {
+  padding-top: 60px;
+}
+
+.jumbotron {
+  background-image: url(../img/header-background.jpg);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  height: auto;
+  text-align: center;
+}
