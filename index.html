@@ -1,106 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/jquery-1.12.4.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Vacation Survey</title>
-</head>
-<body class="container">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Vacation Survey</title>
+  </head>
+  <body class="container">
 
-  <div class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-comment"></span>&nbsp Surveys</a>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-comment"></span>&nbsp Surveys</a>
+      </div>
     </div>
+
+    <div class="jumbotron">
+      <div class="jumbotron-text">
+        <h1><strong>Vacation Survey</strong></h1>
+        <p>Please fill out the form below:</p>
+      </div>
+    </div>
+
+    <div id="survey">
+      <form>
+        <div class="form-group">
+          <label for="name">What is your name?</label>
+          <input type="text" id="name">
+        </div>
+
+        <h2>Do you prefer the mountains or the beach?</h2>
+        <select id="mountains-beach" class="form-control">
+          <option value="1">I prefer the mountains.</option>
+          <option value="2">I prefer the beach.</option>
+        </select>
+
+        <h2>Do you like the snow or the hot sun?</h2>
+        <select id="snow-sun" class="form-control">
+          <option value="1">I'd rather be in a snowy area.</option>
+          <option value="2">I love the sun.</option>
+        </select>
+
+        <h2>Would you like to vacation inside the United States or outside of it?</h2>
+        <select id="inside-outside" class="form-control">
+          <option value="1">I'd like to be within the United States.</option>
+          <option value="2">I'd like to go outside of the US.</option>
+        </select>
+
+        <h2>Do you like site-seeing or doing activities?</h2>
+        <select id="siteseeing-activities" class="form-control">
+          <option value="1">I prefer site-seeing.</option>
+          <option value="2">I prefer doing activities.</option>
+        </select>
+
+        <button type="submit" id="submit">Tell me where to go!</button>
+      </form>
+    </div>
+
+    <hr>
+
+    <div id="results">
+      <div id="stregis">
+        <img src="img/stregis.jpg" alt="St. Regis Deer Valley" />
+        <h2>The St. Regis Deer Valley Resort in Park City, Utah</h2>
+        <p>Hi <strong><span class="name"></span></strong>, This resort is a very special place year round, but especially during the winter. If you like the mountains during the snowy season then this place is perfect for you. It has plenty of site-seeing destinations and so many activities for just you or your family.</p>
+      </div>
+
+      <div id="altapura">
+        <img src="img/altapura.jpg" alt="Altapura Ski Resort" />
+        <h2>Altapura Resort in Val Thorens, France</h2>
+        <p>Hi <strong><span class="name"></span></strong>, The Altapura is a magnificent five star hotel, set back from the lively centre of Val Thorens. It offers a fantastic ski-in, ski-out experience with exceptional scenery.</p>
+
+        <p>The outdoor bar provides afternoon service for an après-ski pause or afternoon tea with the family and is surrounded by heated parasols, so guests can enjoy mulled wine or a glass of Champagne while admiring the winter setting sun.</p>
+
+        <p>This modern property also offers interactive touch screens, iPhone/iPod docking stations and the Mac Mini in rooms. You can swap pictures or videos of your exploits on a big screen, programme the DJ on the terrace, see the mouth-watering Enfants Terribles-Val Thorens menu on screen, etc.</p>
+      </div>
+
+      <div id="lake-tahoe">
+        <img src="img/lake-tahoe.jpg" alt="Lake Tahoe" />
+        <h2>Hyatt Regency Lake Tahoe Resort, Spa & Casino</h2>
+        <p>Hi <strong><span class="name"></span></strong>, you'll find that our mountain retreat is the perfect destination to connect with family - and yourself - while enjoying the natural wonders all around our remarkable Lake Tahoe resort. From delicious cuisine and inviting guestrooms to luxurious amenities and services, you'll experience an incomparable escape. Relax in the heated lagoon-style pool, enjoy the beautiful beach and water sports, sample our restaurants and lounges, and take in gorgeous mountain views.</p>
+      </div>
+
+      <div id="himalayas">
+        <img src="img/himalaya.jpg" alt="Himalayan Mountains, Shimla, India" />
+        <h2>Wildflower Hall, Himalayan Mountains near Shimla, India</h2>
+        <p>Hi <strong><span class="name"></span></strong>, Wildflower Hall offers exclusive massage, yoga and Ayurvedic treatments at bespoke locations around the hotel and grounds. Our open air whirlpool affords magnificent views across the Greater Himalayas, while our indoor pool lit and adorned by overhead crystal chandeliers - is temperature controlled throughout the year.</p>
+      </div>
+
+      <div id="maui">
+        <img src="img/maui.jpg" alt="Montage Kapalua Bay" />
+        <h2>Montage Kapalua Bay in Maui, Hawaii</h2>
+        <p>Hi <strong><span class="name"></span></strong>, set beachfront atop picturesque Kapalua Bay, this 24 acre Maui resort is the ideal destination from which to experience Hawaiian lifestyle at its finest. At Montage Kapalua Bay, you will feel embraced by genuine island hospitality and authentic culture. At every turn, the spirit of Hawaii merges with your own to create pono — a true sense of balance and harmony — as you relax and enjoy all‐suite accommodations, inspired cuisine, championship golf, watersports, and an award winning Hawaii inspired spa.</p>
+      </div>
+
+      <div id="gracebay">
+        <img src="img/gracebay.jpg" alt="Grace Bay Club Resort" />
+        <h2>Grace Bay Club Resort in Grace Bay, Turks and Caicos</h2>
+        <p>Hi <strong><span class="name"></span></strong>, the property is perched on 11 acres, offering guests 1,100 feet of uninterrupted, immaculate beachfront and three levels of accommodations. Grace Bay Club is comprised of three distinct areas: The Hotel, The Villas and The Estate. The Hotel—today our adults-only accommodations—was the original resort at Grace Bay Club. The Villas marked the second phase of the resort’s growth and brought spacious, family-friendly suites and third-party ownership to the property. Our newest project, The Estate, offers exceptionally elegant and expansive, custom-designed suites, which further redefined luxury at Grace Bay Club. This luxurious experience is also available within some of the Island’s finest private, beachfront villa homes through The Collection.</p>
+      </div>
+    </div>
+
   </div>
-
-  <div class="jumbotron">
-    <div class="jumbotron-text">
-      <h1><strong>Vacation Survey</strong></h1>
-      <p>Please fill out the form below:</p>
-    </div>
-  </div>
-
-  <div id="survey">
-    <form>
-      <h2>Do you prefer the mountains or the beach?</h2>
-      <select id="mountains-beach" class="form-control">
-        <option value="1">I prefer the mountains.</option>
-        <option value="2">I prefer the beach.</option>
-      </select>
-
-      <h2>Do you like the snow or the hot sun?</h2>
-      <select id="snow-sun" class="form-control">
-        <option value="1">I'd rather be in a snowy area.</option>
-        <option value="2">I love the sun.</option>
-      </select>
-
-      <h2>Would you like to vacation inside the United States or outside of it?</h2>
-      <select id="inside-outside" class="form-control">
-        <option value="1">I'd like to be within the United States.</option>
-        <option value="2">I'd like to go outside of the US.</option>
-      </select>
-
-      <h2>Do you like site-seeing or doing activities?</h2>
-      <select id="siteseeing-activities" class="form-control">
-        <option value="1">I prefer site-seeing.</option>
-        <option value="2">I prefer doing activities.</option>
-      </select>
-
-      <button type="submit" id="submit">Tell me where to go!</button>
-    </form>
-  </div>
-
-  <div id="results">
-    <div id="stregis">
-      <img src="img/stregis.jpg" alt="St. Regis Deer Valley" />
-      <h2>The St. Regis Deer Valley Resort in Park City, Utah</h2>
-      <p>This resort is a very special place year round, but especially during the winter. If you like the mountains during the snowy season then this place is perfect for you. It has plenty of site-seeing destinations and so many activities for just you or your family.</p>
-    </div>
-
-    <div id="altapura">
-      <img src="img/altapura.jpg" alt="Altapura Ski Resort" />
-      <h2>Altapura Resort in Val Thorens, France</h2>
-      <p>The Altapura is a magnificent five star hotel, set back from the lively centre of Val Thorens. It offers a fantastic ski-in, ski-out experience with exceptional scenery.</p>
-
-      <p>The outdoor bar provides afternoon service for an après-ski pause or afternoon tea with the family and is surrounded by heated parasols, so guests can enjoy mulled wine or a glass of Champagne while admiring the winter setting sun.</p>
-
-      <p>This modern property also offers interactive touch screens, iPhone/iPod docking stations and the Mac Mini in rooms. You can swap pictures or videos of your exploits on a big screen, programme the DJ on the terrace, see the mouth-watering Enfants Terribles-Val Thorens menu on screen, etc.</p>
-    </div>
-
-    <div id="lake-tahoe">
-      <img src="img/lake-tahoe.jpg" alt="Lake Tahoe" />
-      <h2>Hyatt Regency Lake Tahoe Resort, Spa & Casino</h2>
-      <p>You'll find that our mountain retreat is the perfect destination to connect with family - and yourself - while enjoying the natural wonders all around our remarkable Lake Tahoe resort. From delicious cuisine and inviting guestrooms to luxurious amenities and services, you'll experience an incomparable escape. Relax in the heated lagoon-style pool, enjoy the beautiful beach and water sports, sample our restaurants and lounges, and take in gorgeous mountain views.</p>
-    </div>
-
-    <div id="himalayas">
-      <img src="img/himalaya.jpg" alt="Himalayan Mountains, Shimla, India" />
-      <h2>Wildflower Hall, Himalayan Mountains near Shimla, India</h2>
-      <p>Wildflower Hall offers exclusive massage, yoga and Ayurvedic treatments at bespoke locations around the hotel and grounds. Our open air whirlpool affords magnificent views across the Greater Himalayas, while our indoor pool lit and adorned by overhead crystal chandeliers - is temperature controlled throughout the year.</p>
-    </div>
-
-    <div id="maui">
-      <img src="img/maui.jpg" alt="Montage Kapalua Bay" />
-      <h2>Montage Kapalua Bay in Maui, Hawaii</h2>
-      <p></p>
-    </div>
-
-    <div id="gracebay">
-      <img src="" alt="" />
-      <h2></h2>
-      <p></p>
-    </div>
-
-    <div id="">
-      <img src="" alt="" />
-      <h2></h2>
-      <p></p>
-    </div>
-  </div>
-
-</div>
-</body>
+  </body>
 </html>
