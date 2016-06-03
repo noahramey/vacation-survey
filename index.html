@@ -10,22 +10,60 @@
   </head>
   <body>
 
-  <div class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-comment"></span>&nbsp Surveys</a>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="jumbotron">
-       <div class="jumbotron-text">
-        <h1><strong>Vacation Survey</strong></h1>
-        <p>Please fill out the form below:</p>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-comment"></span>&nbsp Surveys</a>
       </div>
     </div>
 
-    <form class="survey">
-      
-    </form>
+    <div class="container">
+      <div class="jumbotron">
+         <div class="jumbotron-text">
+          <h1><strong>Vacation Survey</strong></h1>
+          <p>Please fill out the form below:</p>
+        </div>
+      </div>
+
+      <div class="survey">
+        <form>
+          <h2>Do you prefer the mountains or the beach?</h2>
+          <select id="mountains-beach" class="form-control">
+            <option value="mountain">I prefer the mountains.</option>
+            <option value="beach">I prefer the beach.</option>
+          </select>
+
+          <h2>Do you like the snow or the hot sun?</h2>
+          <select id="snow-sun" class="form-control">
+            <option value="snow">I'd rather be in a snowy area.</option>
+            <option value="sun">I love the sun.</option>
+          </select>
+
+          <h2>Would you like to vacation inside the United States or outside of it?</h2>
+          <select id="inside-outside" class="form-control">
+            <option value="inside">I'd like to be within the United States.</option>
+            <option value="outside">I'd like to go outside of the US.</option>
+          </select>
+
+          <h2>What is your budget for this trip?</h2>
+          <select id="budget" class="form-control">
+            <option value="low">Around $1,000 to $5,000</option>
+            <option value="high">Money is not an issue.</option>
+          </select>
+
+          <h2>Do you like site-seeing or doing activities?</h2>
+          <select id="siteseeing-activities" class="form-control">
+            <option value="siteseeing">I prefer site-seeing.</option>
+            <option value="activities">I prefer doing activities.</option>
+          </select>
+
+          <button type="submit" id="submit">Tell me where to go!</button>
+        </form>
+      </div>
+
+      <div id="results">
+        
+      </div>
+
+    </div>
   </body>
 </html>
